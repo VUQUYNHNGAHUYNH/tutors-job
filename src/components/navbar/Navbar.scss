@@ -1,0 +1,103 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+  position: sticky;
+  top: 0;
+
+  &.scroll {
+    background-color: #008f7a;
+    color: white;
+  }
+
+  .container {
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+
+    .logoText {
+      font-size: 34px;
+      font-weight: bold;
+      color: #008f7a;
+
+      &.scroll {
+        color: white;
+      }
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      font-weight: 600;
+
+      .user {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        position: relative;
+
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        .options {
+          position: absolute;
+          top: 45px;
+          right: 0;
+          background-color: black;
+          color: white;
+          padding: 10px 20px;
+          border-radius: 10px;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          width: 200px;
+          box-sizing: border-box;
+        }
+
+        span {
+          &:hover {
+            color: #55c6ae;
+          }
+        }
+      }
+
+      button {
+        background-color: #008f7a;
+        color: white;
+        font-weight: 600;
+        font-size: 15px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        border: 1px solid white;
+        cursor: pointer;
+
+        &:hover {
+          background-color: white;
+          color: #008f7a;
+          border: 1px solid #008f7a;
+        }
+      }
+    }
+  }
+
+  hr {
+    width: 100%;
+    color: #008f7a;
+    border: 0.5px solid white;
+  }
+  .menu {
+    width: 1400px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}
