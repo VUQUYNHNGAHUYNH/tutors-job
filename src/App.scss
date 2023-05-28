@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+
+.App {
+  font-family: "Quicksand", sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  .link {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      color: #55c6ae;
+    }
+  }
+}

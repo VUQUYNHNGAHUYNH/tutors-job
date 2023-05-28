@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.scss";
 
 const Navbar = () => {
@@ -25,7 +26,11 @@ const Navbar = () => {
   return (
     <div className={scroll ? "navbar scroll" : "navbar"}>
       <div className="container">
-        <div className={scroll ? "logoText scroll" : "logoText"}>Tutors</div>
+        <div className={scroll ? "logoText scroll" : "logoText"}>
+          <Link to="/" className="link">
+            Tutors
+          </Link>
+        </div>
         <div className="links">
           {currentUser?.isTutor && <span>Become a tutor</span>}
           <span>Sign In</span>
@@ -38,13 +43,23 @@ const Navbar = () => {
                 <div className="options">
                   {currentUser?.isTutor && (
                     <>
-                      <span>Job Posts</span>
-                      <span>Add a post</span>
+                      <Link className="link" to="/job-posts">
+                        Job Posts
+                      </Link>
+                      <Link className="link" to="/add">
+                        Add a post
+                      </Link>
                     </>
                   )}
-                  <span>Orders</span>
-                  <span>Messages</span>
-                  <span>Log Out</span>
+                  <Link className="link" to="/orders">
+                    Orders
+                  </Link>
+                  <Link className="link" to="/messages">
+                    Messages
+                  </Link>
+                  <Link className="link" to="/">
+                    Log Out
+                  </Link>
                 </div>
               )}
             </div>
