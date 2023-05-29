@@ -1,0 +1,84 @@
+.banner {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  background-color: #c4fcf0;
+
+  .container {
+    width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      h1 {
+        font-size: 50px;
+      }
+
+      .search {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 10px;
+
+        .searchInput {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          .icon {
+            margin: 10px;
+          }
+
+          input {
+            border: none;
+            outline: none;
+            font-size: 15px;
+          }
+        }
+
+        button {
+          width: 100px;
+          height: 50px;
+          border: none;
+          font-weight: 600;
+          font-size: 15px;
+          background-color: #008f7a;
+          color: white;
+          cursor: pointer;
+        }
+      }
+
+      .popular {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        button {
+          background-color: transparent;
+          border: 1px solid black;
+          border-radius: 20px;
+          padding: 5px 10px;
+          font-size: 14px;
+          font-weight: 500;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .right {
+      height: 100%;
+
+      img {
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Navbar.scss";
 
 const Navbar = () => {
-  const [scroll, setScroll] = useState(false);
+  const [scroll, setScroll] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
